@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:interpolator="@android:anim/decelerate_interpolator">
+
+    <!--// di chuyen sang trai(-) 5% chieu rong cua thang cha (p - parent)-->
+    <translate
+        android:duration="100"
+        android:fromXDelta="0"
+        android:toXDelta="-5%p"/>
+    <!--// startOffset: animation nay se bat dau sau 100 sau khi animation dau tien bat dau-->
+    <translate
+        android:duration="100"
+        android:fromXDelta="-5%p"
+        android:startOffset="100"
+        android:toXDelta="5%p"/>
+    <!--// bat sau 200mili giay sau khi animation dau tien bat dau-->
+    <translate
+        android:duration="100"
+        android:fromXDelta="5%p"
+        android:startOffset="200"
+        android:toXDelta="-5%p"/>
+
+</set>
